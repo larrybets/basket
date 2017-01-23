@@ -42,10 +42,10 @@ public class BasketJDBC {
         // Vamos dando valores a los interrogantes
         ps.setString(1, j.getNombre());
         ps.setDate(2, java.sql.Date.valueOf(j.getNacimiento()));
-        ps.setString(3, j.getSexo());
-        ps.setInt(4, j.getEdad());
-        ps.setInt(5, j.getExperiencia());
-        ps.setString(6, j.getEspecialidad());
+        ps.setString(3, j.getPosicion());
+        ps.setInt(4, j.getAsistencias());
+        ps.setInt(5, j.getCanastas());
+        ps.setInt(6, j.getRebotes());
         // ejecutamos la consultas
         ps.executeUpdate();
         ps.close();
