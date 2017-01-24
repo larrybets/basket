@@ -86,4 +86,17 @@ public class Jugador {
     public void setEquipo(Equipo equipo) {
         this.equipo = equipo;
     }
+
+    @Override
+    public String toString() {
+        return "Jugador{" +
+                "nombre='" + nombre + '\'' +
+                ", nacimiento=" + nacimiento +
+                ", canastas=" + canastas +
+                ", posicion='" + posicion + '\'' +
+                ", asistencias=" + asistencias +
+                ", rebotes=" + rebotes +
+                ", equipo=" + equipo.getNombre() +
+                '}';
+    }
 }
